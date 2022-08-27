@@ -1,16 +1,6 @@
-[package]
-name = "simple-window-manager"
-version = "0.1.0"
-edition = "2021"
-path="src-rust/lib.rs"
+[workspace]
 
-[[bin]]
-name = "simple-wm"
-
-[package.metadata.commands]
-coverage = "cargo tarpaulin -o Html"
-build = "rustb"
-
-[dev-dependencies]
-laboratory = "2.0.0"
-mocktopus = "0.7.11"
+members = [
+  "rusty-wm",
+  "rusty-rsx"
+]
